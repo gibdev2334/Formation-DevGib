@@ -12,11 +12,11 @@
     ou si elle est divisible par 400
     <script>
         let annee = +prompt("entrez une année");
-
-        if (annee % 4 == 0 && annee % 100 !== 0 || annee % 400 == 0) {
-            console.log("bissextile")
+        if ((annee % 4 == 0 && annee % 100 != 0) || annee % 400 == 0) {
+            alert(`${annee} est bissextile`);
+        } else {
+            alert(`${annee} n'est pas bissextile`);
         }
-
     </script>
 </body>
 
