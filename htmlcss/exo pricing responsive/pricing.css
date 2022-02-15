@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(226, 25%, 55%);
+    text-align: center;
+    box-shadow: royalblue;
+    
+
+    
+}
+
+.block{
+    height: 600px;
+    width: 500px;
+    color: white;
+    padding: 2em;
+}
+
+
+.button1 {
+    background-color: blue;
+    width: 80px;
+    padding: 0.05em;
+    text-align: center;
+    border: rgb(47, 20, 133);
+}
+
+.button2 {
+    background-color: orange;
+    width: 80px;
+    padding: 0.05em;
+    text-align: center;
+    border: rgb(133, 94, 20);
+}
+
+.button3 {
+    background-color:red;
+    width: 80px;
+    padding: 0.05em;
+    text-align: center;
+    border: rgb(133, 20, 35);
+}
+
+
+
+.titre1 {
+    background-color: royalblue;
+    display: flex;
+    padding: 0px;
+    
+}
+.titre2 {
+    background-color:orangered;
+    display: flex;
+}
+.titre3 {
+    background-color: red;
+    display: flex; 
+}

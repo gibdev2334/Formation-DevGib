@@ -1,0 +1,22 @@
+.container {
+    border: 1px solid black;
+    height: 200px;
+    background-color: tomato;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container:hover {
+    flex-direction: row;
+}
+
+.block {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+
+}

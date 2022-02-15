@@ -1,0 +1,91 @@
+COURS THOMAS RESPONSIVE 2610 2021
+
+Correction HTML
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Exemple Design Adaptatif</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    </head>
+    <body>
+        <img
+            class="optional-image"
+            src="https://via.placeholder.com/400x150/"
+            alt=""
+        />
+        <div class="container">
+            <div class="block">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+            <div class="block">4</div>
+            <div class="block">5</div>
+            <div class="block">6</div>
+            <div class="block">7</div>
+            <div class="block">8</div>
+            <div class="block">9</div>
+            <div class="block">10</div>
+            <div class="block">11</div>
+            <div class="block">12</div>
+            <div class="block">13</div>
+            <div class="block">14</div>
+            <div class="block">15</div>
+            <div class="block">16</div>
+            <div class="block">17</div>
+            <div class="block">18</div>
+            <div class="block">19</div>
+            <div class="block">20</div>
+        </div>
+    </body>
+</html>
+
+
+CORRECTION CSS
+
+/*
+Pour appréhender le design adaptatif la logique veut que l'on commence par le design mobile (qui représente la majorité des périphériques navigant sur le web)
+ */
+
+/* nos règles CSS de base sont donc adaptées à un design sur écran de largeur réduite, d'où notre orientation en colonne pour notre flexbox */
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+.block {
+    margin: 0 5px;
+    font-size: 2em;
+    width: 150px;
+    height: 200px;
+    background-color: burlywood;
+    border: 1px solid black;
+}
+.optional-image {
+    display: none;
+}
+/* Pour pouvoir séparer les règles CSS pour mobile et celles pour les autres dispositifs (tablettes et pc la plupart du temps) on peut utiliser une requête media (media query : https://developer.mozilla.org/fr/docs/Web/CSS/Media_Queries/Using_media_queries)  */
+/* ces requêtes média permettent d'appliquer des règles CSS selon des conditions liées au périphérique de lecture (la taille, les préférences utilisateurs, etc) */
+/* Ici on précise que les règles appliquées seront pour des écrans (screen) ET de largeur minimale de 468px (min-width) */
+@media screen and (min-width: 468px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .optional-image {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        background-color: red;
+    }
+}
+

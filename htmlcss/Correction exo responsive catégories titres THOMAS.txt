@@ -1,0 +1,113 @@
+CORRECTION EXO CATEGORIES RESPONSIVES 28/10/21
+
+PARTIE HTML
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Categories</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="category category1">
+                <div>
+                    <h2>Titre 1</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Beatae, reprehenderit. Quas explicabo earum enim porro
+                        ea alias reprehenderit quia, veniam, nam cumque non
+                        saepe architecto molestiae illum aut. Sed, quas.
+                    </p>
+                </div>
+                <a href="" class="button">Voir Plus</a>
+            </div>
+            <div class="category category2">
+                <div>
+                    <h2>Titre 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Beatae, reprehenderit. Quas explicabo earum enim porro
+                        ea alias reprehenderit quia, veniam, nam cumque non
+                        saepe architecto molestiae illum aut. Sed, quas.
+                    </p>
+                </div>
+                <a href="" class="button">Voir Plus</a>
+            </div>
+            <div class="category category3">
+                <div>
+                    <h2>Titre 3</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Beatae, reprehenderit. Quas explicabo earum enim porro
+                        ea alias reprehenderit quia, veniam, nam cumque non
+                        saepe architecto molestiae illum aut. Sed, quas.
+                    </p>
+                </div>
+                <a href="" class="button">Voir plus</a>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+PARTIE CSS
+
+.container {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.category {
+    height: 500px;
+    width: 300px;
+    color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+.category1 {
+    background-color: #1e6091;
+}
+.category2 {
+    background-color: #34a0a4;
+}
+.category3 {
+    background-color: #76c893;
+}
+
+.button {
+    background-color: white;
+    padding: 1em;
+    width: 150px;
+    border-radius: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.category1 .button {
+    color: #1e6091;
+}
+.category2 .button {
+    color: #34a0a4;
+}
+.category3 .button {
+    color: #76c893;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

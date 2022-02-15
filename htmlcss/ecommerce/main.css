@@ -1,0 +1,33 @@
+.container{
+    background-color: rgb(245, 238, 238);
+    font-style: normal;
+    display: grid;
+    align-items: stretch;
+}
+.card1{
+    background-color: orange;
+    border:solid 1px blanchedalmond;
+    height: 300px;
+    width: 500px;
+}
+
+.card2{
+    background-color: rgba(255, 166, 0, 0.753);
+    border:solid 1px blanchedalmond;
+    height: 200px;
+    width: 400px;
+}
+
+.card3{
+    background-color: rgb(126, 125, 123);
+    border:solid 1px blanchedalmond;
+    height: 100px;
+    width: 300px;
+}
+
+.card4{
+    background-color: rgb(39, 39, 38);
+    border:solid 1px blanchedalmond;
+    height: 200px;
+    width: 350px;
+}

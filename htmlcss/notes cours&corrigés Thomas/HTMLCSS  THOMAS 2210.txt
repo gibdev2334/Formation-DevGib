@@ -1,0 +1,103 @@
+COURS HTMLCSS 22/10
+
+HTMLCSS/FLEX/INDEX.HTML
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Flexbox</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="block block1">Bloc 1</div>
+            <div class="block block2">Bloc 2</div>
+            <div class="block block3">Bloc 3</div>
+            <div class="block block4">Bloc 4</div>
+            <div class="block block5">Bloc 5</div>
+        </div>
+    </body>
+</html>
+
+
+
+HTML/FLEX/MAIN.CSS
+.container {
+    border: 1px solid black;
+    height: 200px;
+    width: 100%;
+    background-color: tomato;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.block {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+}
+
+HTMLCSS/REPRODUCTION/BOOTSTRAPKIT/INDEX.HTML
+
+ <nav>
+                <a class="logo" href="">SB UI Kit Pro</a>
+                <ul>
+                    <li>Home</li>
+                    <li>Landings</li>
+                    <li>Pages</li>
+                    <li>Documentation</li>
+                    <li>Buy Now</li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Landings</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Documentation</a></li>
+                    <li><a class="button-buy" href="">Buy Now</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+HTMLCSS/REPRODUCTION/BOOTSTRAPKIT/MAIN.CSS
+
+    list-style-type: none;
+}
+
+nav ul li {
+nav ul li a {
+    margin: 0 15px;
+    color: #737373;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #333333;
+}
+
+.logo {
+    font-weight: bolder;
+    color: #0061f2;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-size: 1.2em;
+}
+
+.button-buy {
+    background-color: #0061f2;
+    margin-left: 60px;
+    font-weight: bold;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 0.35rem;
+}
+
+.button-buy:hover {
+    color: white;
+    background-color: #0052ce;
+}
+

@@ -1,0 +1,27 @@
+body {
+    background-color:#0099ff ;
+}
+
+.text-regularJD {
+    font-weight: 200;
+}
+.text-lightJD {
+    font-weight: 50;
+}
+.cardJD-info h1 {
+    text-align: left;
+}
+.cardJD-info > h2 {
+    text-align: center; 
+} 
+.cardJD-info > h3 {
+    text-align: right;
+}
+.cardJD-social-number h4 {
+    text-align: center;
+}
+.cardJD-social-number > h5 {
+    margin: 5px;
+}
+
+

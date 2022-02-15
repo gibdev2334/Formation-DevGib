@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Metropolis";
+    src: url("metropolis.regular.otf") format("opentype");
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+nav {
+    margin: 0 au;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+}
+nav a,
+  .banner a {
+        text-decoration: none;
+    
+}
+nav ul li {
+    margin: 0 15px;
+    color: #737373;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #333333;
+}
+
+.logo {
+    font-weight: bolder;
+    color: #0061f2;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-size: 1.2em;
+}
+
+.button {
+    background-color: #0061f2;
+    margin-left: 60px;
+    font-weight: 700;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 0.35rem;
+}
+
+.button:hover {
+    color: white;
+    background-color: #0052ce;
+}
+.button-clear {
+    background-color: #dae7fb;
+    color: #0061f2;
+}
+
+.button-clear:hover {
+    background-color: #e0ebfc;
+    color: #0061f2;
+}
+
+
+.banner {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.banner-image {
+    width: 50%;
+    padding: 0.20px;
+}
+
+.banner-text {
+    width: 50%;
+}
+
+.banner-text h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #363d47;
+    /*si on désire préciser toutes les marges d'un élément en une ligne on peut utiliser cette syntaxe qui permet de définir les 4 marges dans le sens des aiguilles d'une montre en partant d'en haut*/
+    /*toutes nos marges
+    margin: 0 0 8px 0;
+}
+
+.banner-text p {
+    font-size: 1.15rem;
+    color: #69707a;
+}
+
+
+
+/*
+nth-child permet de sélectionner le n-ème enfant d'un certain type dans un selecteur css. Ici ce sélecteur signifie "je veux la deuxième div directement enfant d'un élément avec la classe .banner-text "
+*/
+.banner-text > div:nth-child(1) {
+    margin-bottom: 40px;
+}
+
+header{
+    margin-bottom: 100px;
+}
+
+.button-explore {
+    margin-right: 13px;
+}
+
+.button-buy {
+    margin-left: 64px;
+
+}
